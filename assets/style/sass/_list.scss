@@ -1,0 +1,43 @@
+.list-items
+  margin: 0
+  padding: 0
+  border-top: 1px solid whitesmoke
+  list-style: none
+  &.complete
+    text-decoration: line-through
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)
+    border-radius: 0 0 .5rem .5rem
+  > li
+    border-bottom: 1px solid whitesmoke
+    padding: .5rem 1rem
+    display: flex
+    align-items: stretch
+    line-height: 1.5rem
+    &:last-of-type
+      border: 0
+    .actions
+      opacity: 0
+    &:hover .actions
+      opacity: 1
+
+  .item-title
+    flex: 1 1 auto
+
+  .actions
+    margin: 0
+    padding: 0
+    list-style: none
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 5px
+    transition: .5s
+    button
+      padding: 0
+      .material-icons
+        line-height: 1.5rem
+        vertical-align: middle
+
+.item-title
+  font-size: 1rem
+  line-height: 2rem
+  margin: 0
